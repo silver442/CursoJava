@@ -1,0 +1,31 @@
+package hernandez.silver.ejerciciospoo;
+
+public class ClaseSucursal {
+	
+	public ClaseSucursal(int numSucursal, String direccion, String ciudad) {
+		
+		this.numSucursal=numSucursal;
+		this.direccion=direccion;
+		this.ciudad=ciudad;
+	
+	}
+	
+	// Métodos getter
+	public String getSucursal() {
+		return "el numero de la sucursal es " + numSucursal;
+	}
+	
+	public String getDireccion() {
+		return "La dirección es: " + direccion;
+	}
+	
+	public String getCiudad() {
+		return "en la ciudad de: " + ciudad;
+	}
+	
+	public static void setCalcularPrecio()
+	
+	private int numSucursal;
+	private String direccion;
+	private String ciudad;
+}

@@ -10,7 +10,7 @@ public class UsoCuenta {
 
 		Cuenta1.setIngreso(300);
 		
-		Cuenta1.setTransferencia(Cuenta1, Cuenta2, 50);
+		CuentaCorrientes.setTransferencia(Cuenta1, Cuenta2, 50);
 		
 		System.out.println(Cuenta1.getDatosGenerales());
 		System.out.println(Cuenta2.getDatosGenerales());

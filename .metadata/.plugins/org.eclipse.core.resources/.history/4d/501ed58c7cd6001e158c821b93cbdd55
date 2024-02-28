@@ -1,0 +1,80 @@
+package hernandez.silver.ejerciciospoo;
+
+public class ClaseSucursal {
+	
+	public ClaseSucursal(int numSucursal, String direccion, String ciudad) {
+		
+		this.numSucursal=numSucursal;
+		this.direccion=direccion;
+		this.ciudad=ciudad;
+	
+	}
+	
+	// Métodos getter
+	public String getSucursal() {
+		return "el numero de la sucursal es " + numSucursal;
+	}
+	
+	public String getDireccion() {
+		return "La dirección es: " + direccion;
+	}
+	
+	public String getCiudad() {
+		return "en la ciudad de: " + ciudad;
+	}
+	
+	//Método setter
+	public static void setCalcularPrecio(ClasePaquete paquete, double peso, int prioridad) {
+		
+		switch(prioridad) {
+		case 0:
+			
+			break;
+		case 1:
+			break;
+		case 2:
+			break;
+		}
+		
+	}
+	
+	private int numSucursal;
+	private String direccion;
+	private String ciudad;
+}
+
+class ClasePaquete{
+	
+	ClasePaquete(String referencia, double peso, int DNI, int prioridad){
+		
+		this.referencia=referencia;
+		this.peso=peso;
+		this.DNI=DNI;
+		this.prioridad=prioridad;
+		
+	}
+	
+	//Métodos setter
+	
+	public void setPeso(double peso) {
+		this.peso=peso;
+	}
+	
+	public void setPrioridad(int prioridad) {
+		this.prioridad=prioridad;
+	}
+	
+	// Métodos Getter
+	public double getPeso() {
+		return peso;
+	}
+	
+	public int getPrioridad() {
+		return prioridad;
+	}
+	
+	private String referencia;
+	private double peso;
+	private int DNI;
+	private int prioridad;
+}

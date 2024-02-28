@@ -1,0 +1,34 @@
+package hernandez.silver.ejerciciospoo;
+
+import java.util.Scanner;
+
+public class ClaseUso_Sucursal_y_Paquete {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int numSucursal;
+		String direccion;
+		String ciudad;
+		int numPaquetes;
+		
+		Scanner entrada =new Scanner(System.in);
+		
+		System.out.println("Numero de sucursal");
+		numSucursal=entrada.nextInt();
+		System.out.println("dirccion: ");
+		direccion=entrada.nextLine();
+		System.out.println("ciudad: ");
+		ciudad=entrada.nextLine();
+		System.out.println("Num de paquetes:");
+		numPaquetes=entrada.nextInt();
+		
+		ClaseSucursal sucursal=new ClaseSucursal(numSucursal,direccion,ciudad);
+		
+		ClasePaquete paquete1=new ClasePaquete(101, 1, 123, 0);
+		
+		ClaseSucursal.setCalcularPrecio(paquete1, 100);
+		
+		
+	}
+}
