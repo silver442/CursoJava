@@ -1,0 +1,14 @@
+package ejercicios;
+
+import javax.swing.JOptionPane;
+
+public class CalculoPotenciaJOptionPane {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double potencia = Double.parseDouble(JOptionPane.showInputDialog("Introduce la base"));
+
+	}
+
+}

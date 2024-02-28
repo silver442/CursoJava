@@ -1,0 +1,16 @@
+package hernandez.silvestre.poo;
+
+public class UsoVehiculos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+						// new para llamae al constructor
+		Vehiculos miCoche=new Vehiculos();
+		
+		miCoche.setColor("verde");
+		
+		System.out.println(miCoche.getColor());
+		
+	}
+}

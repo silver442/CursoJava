@@ -1,0 +1,14 @@
+package hernandez.silvestre.flujo;
+
+import javax.swing.JOptionPane;
+
+public class Condicional_If_Ejemplo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int edad=Integer.parseInt(JOptionPane.showInputDialog("Introuce tu edad, por favor"));
+
+		
+	}
+
+}

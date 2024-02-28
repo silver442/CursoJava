@@ -1,0 +1,10 @@
+package hernandez.silver.ejerciciospoo;
+
+public class CuentaCorrientes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

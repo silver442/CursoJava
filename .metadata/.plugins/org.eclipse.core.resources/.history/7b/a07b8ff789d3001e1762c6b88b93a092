@@ -1,0 +1,21 @@
+package ejercicios;
+
+import javax.swing.JOptionPane;
+
+public class PesoIdeal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String genero = JOptionPane.showInputDialog("Eres mujer o hombre");
+		
+		double altura = Double.parseDouble(JOptionPane.showInputDialog("Introduce tu estatura: "));
+		
+		double peso_ideal;
+		
+		if(genero.equalsIgnoreCase("mujer")) {
+			peso_ideal = altura
+		}
+	}
+
+}

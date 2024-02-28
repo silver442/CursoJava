@@ -1,0 +1,10 @@
+package hernandez.silvestre.flujo;
+
+public class Calculo_Factorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

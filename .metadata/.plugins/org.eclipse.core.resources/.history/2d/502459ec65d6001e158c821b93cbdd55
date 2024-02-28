@@ -1,0 +1,46 @@
+package hernandez.silver.ejerciciospoo;
+
+public class CuentaCorrientes {
+
+	public CuentaCorrientes(String nombre, double saldo) {
+		nombreTitular=nombre;
+		
+		this.saldo=saldo;
+		
+		numeroCuenta=(long)(Math.random()*100);
+	}
+	
+	//Metodo setter
+	public void setIngreso(double ingreso) {
+		
+		saldo = saldo + ingreso;
+		
+	}
+	
+	public void setReintegros() {
+		
+	}
+	
+	//Metodo getter
+	public double getSaldo() {
+		
+		return saldo;
+	}
+	
+	public String getDatosGenerales() {
+		return "El numbre del usuario es: "+nombreTitular+". Con n° de cuenta: "+
+				numeroCuenta+ " y saldo de: " + saldo;
+	}
+	
+	//Método que permite realizar transferencia
+	public void setTransferencia(String nombre, double cantidadTransferir) {
+		
+		
+		
+	}
+	
+	private double saldo;
+	private String nombreTitular;
+	private long numeroCuenta;
+
+}

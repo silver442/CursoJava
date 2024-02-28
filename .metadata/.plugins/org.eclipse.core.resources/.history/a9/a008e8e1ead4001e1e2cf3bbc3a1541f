@@ -1,0 +1,35 @@
+package ejercicios;
+
+import javax.swing.JOptionPane;
+
+public class DireccionEmail {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String email;
+		
+		boolean arroba=false;
+		boolean punto=false
+		boolean caracter=false;
+		
+		while(!arroba && !punto && !caracter) {
+			email=JOptionPane.showInputDialog("Ingresa tu correo");
+			
+			for(int i=0;i<email.length();i++) {
+				
+				if(email.charAt(i)=='@') {
+					arroba=true;	
+				}
+				if(email.charAt(i)=='.') {
+					punto=true;
+				}
+				if(email.length()>4) {
+					caracter=true;
+				}
+			}
+		}
+		System.out.println("Programa finalizado");
+	}
+
+}

@@ -1,0 +1,21 @@
+package hernandez.silvestre.flujo;
+
+import javax.swing.JOptionPane;
+
+public class EjemploWhile1 {
+
+	public static void main(String[] args) {
+		
+		String clave ="Silver";
+		
+		String acceso="";
+		
+		while(!clave.equals(acceso)) {
+			acceso = JOptionPane.showInputDialog("Ingresa la contraseña");
+		}
+		
+		System.out.println("Acceso a la plataforma");
+
+	}
+
+}

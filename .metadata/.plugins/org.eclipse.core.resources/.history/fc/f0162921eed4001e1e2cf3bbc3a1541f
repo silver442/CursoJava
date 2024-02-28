@@ -1,0 +1,22 @@
+package ejercicios;
+
+import javax.swing.JOptionPane;
+
+public class NumeroFactorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int numero=Integer.parseInt(JOptionPane.showInputDialog("Ingresa un numero para obtener su factorial"));
+		
+		int factorial=1;
+		
+		for(int i=1;i>numero;i--) {
+			
+			factorial=i*numero;
+		}
+		
+		System.out.println("el factorial de "+numero+" = "+factorial);
+	}
+
+}

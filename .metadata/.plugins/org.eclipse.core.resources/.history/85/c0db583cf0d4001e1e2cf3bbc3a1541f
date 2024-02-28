@@ -1,0 +1,16 @@
+package hernandez.silvestre.flujo;
+
+public class Email_Correcto {
+
+	public static void main(String[] args) {
+		
+		boolean valido=false;
+		
+		do {
+			
+		}while(!valido);
+
+		
+	}
+
+}

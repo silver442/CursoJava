@@ -1,0 +1,10 @@
+package hernandez.silvestre.flujo;
+
+public class Ejemplo_For {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package hernandez.silver.ejerciciospoo;
+
+public class CuentaCorrientes {
+
+	public CuentaCorrientes(String nombre, double saldo) {
+		nombreTitular=nombre;
+		
+		this.saldo=saldo;
+		
+		numeroCuenta=(long)(Math.random()*1000);
+	}
+	
+	private double saldo;
+	private String nombreTitular;
+	private long numeroCuenta;
+
+}

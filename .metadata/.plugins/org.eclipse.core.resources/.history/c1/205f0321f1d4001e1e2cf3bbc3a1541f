@@ -1,0 +1,22 @@
+package hernandez.silvestre.flujo;
+
+import javax.swing.JOptionPane;
+
+public class Email_Correcto {
+
+	public static void main(String[] args) {
+		
+		boolean valido=false;
+		
+		do {
+			
+			String email=JOptionPane.showInputDialog("Introduce direccion de email, por favor");
+			
+			
+			
+		}while(valido==false);
+
+		
+	}
+
+}

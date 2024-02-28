@@ -1,0 +1,11 @@
+package hernandez.silvestre.flujo;
+
+public class OperadorTernario {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

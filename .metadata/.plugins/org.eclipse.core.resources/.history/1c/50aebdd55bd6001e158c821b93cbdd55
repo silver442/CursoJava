@@ -1,0 +1,29 @@
+package hernandez.silvestre.poo;
+
+public class Vehiculos {
+
+	public Vehiculos() { // Constructor de la clase. Mismo nombre que la clase
+		
+		//Esstado inicial
+		ruedas=4;
+		largo=2;
+		ancho=1;
+		peso=2;
+		color="sin color";
+		
+	}
+	
+	// Método setter
+	public void setColor(){
+		
+		color="azul";
+		
+	}
+	
+	//Propiedades
+	private int ruedas;
+	private String color;
+	private int largo;
+	private int ancho;
+	private int peso;
+}

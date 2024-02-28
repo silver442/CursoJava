@@ -1,0 +1,10 @@
+package hernandez.silvestre.arrays;
+
+public class Ejemplo_Arrays_bidimensional {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
