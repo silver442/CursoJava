@@ -1,0 +1,16 @@
+package hernandez.silver.ejerciciospoo;
+
+public class Alumno {
+
+	public Alumno(String nombreAlumno, double nota) {
+		
+		this.nombreAlumno=nombreAlumno;
+		
+		this.nota=nota;
+		
+	}
+	
+	private final String nombreAlumno;
+	
+	private double nota;
+}

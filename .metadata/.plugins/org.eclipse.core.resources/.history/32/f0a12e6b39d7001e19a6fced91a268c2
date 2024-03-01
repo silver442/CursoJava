@@ -1,0 +1,37 @@
+package hernandez.silver.ejerciciospoo;
+
+public class Alumno {
+
+	public Alumno(String nombreAlumno, String nombreColegio, int numAlumno, double nota) {
+		
+		this.nombreAlumno=nombreAlumno;
+		
+		this.nombreColegio=nombreColegio;
+		
+		this.numAlumno=numAlumno;
+		
+		this.nota=nota;
+		
+	}
+	
+	// Metodos getter
+	public String getAlumno() {
+		
+		return nombreAlumno;
+		
+	}
+	
+	public double getNota() {
+		
+		return nota;
+		
+	}
+	
+	private final String nombreAlumno;
+	
+	private String nombreColegio;
+	
+	private int numAlumno;
+	
+	private double nota;
+}

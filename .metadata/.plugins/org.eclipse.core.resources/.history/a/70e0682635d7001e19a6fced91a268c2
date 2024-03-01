@@ -1,0 +1,13 @@
+package hernandez.silver.ejerciciospoo;
+
+public class Colegio {
+	
+	public Colegio() {
+		
+	}
+	
+	
+	private final String nombreColegio;
+
+	private int cantidadAlumnos;
+}

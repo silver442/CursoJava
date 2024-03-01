@@ -1,0 +1,15 @@
+package hernandez.silver.ejerciciospoo;
+
+public class Colegio {
+	
+	public Colegio(String nombreColegio, int cantidadAlumnos) {
+		this.nombreColegio=nombreColegio;
+		
+		this.cantidadAlumnos=cantidadAlumnos;
+	}
+	
+	
+	private final String nombreColegio;
+
+	private int cantidadAlumnos;
+}
