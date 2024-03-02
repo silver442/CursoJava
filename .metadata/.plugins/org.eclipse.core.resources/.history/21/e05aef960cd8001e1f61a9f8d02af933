@@ -1,0 +1,33 @@
+package hernandez.silvestre.poo;
+
+public class CadenaHerencia {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}
+
+class Clase1{
+	
+	public void metodo1() {
+		
+	}
+	
+}
+
+class Clase2 extends Clase1{
+	
+}
+
+class Clase3 extends Clase2{
+	
+}
+
+class Clase4 extends Clase3{
+	
+}
+
+class Clase5 extends Clase4{
+	
+}

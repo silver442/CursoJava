@@ -1,0 +1,57 @@
+package hernandez.silvestre.poo;
+
+public class UsoEmpleados {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Empleados empleado1=new Empleados("Anna");
+		
+		Empleados empleado2=new Empleados("Antonio");
+		
+		Empleados empleado3=new Empleados("Maria");
+		
+		System.out.println(empleado1.getDatosEmpleado());
+		
+		System.out.println(empleado1.getDatosEmpleado());
+		
+		System.out.println(empleado2.getDatosEmpleado());
+		
+		System.out.println(empleado3.getDatosEmpleado());
+		
+		System.out.println(Empleados.getIdSiguiente());
+	}
+}
+
+class Empleados{
+	
+	public Empleados(String nombre) {
+		
+		this.nombre=nombre;
+		
+		Id=IdSiguiente;
+		
+		IdSiguiente++;
+	}
+	
+	public String getDatosEmpleado() {
+		
+		return "El empleado " + nombre + " tiene el Id "+Id;
+	}
+	
+	public static String getIdSiguiente() {
+		
+		return "El Id del siguiente Empleado será: " + IdSiguiente;
+		
+	}
+	
+	private final String nombre;
+
+	private double sueldo;
+	
+	private String fechaAlta;
+	
+	private int Id;
+	
+	private static int IdSiguiente=1;
+}
