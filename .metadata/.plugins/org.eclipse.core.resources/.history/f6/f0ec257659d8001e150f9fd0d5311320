@@ -1,0 +1,21 @@
+package hernandez.silver.ejerciciospoo;
+
+import java.util.Random;
+
+public class UsoGeneradorContraseña {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Random rnd = new Random();
+		
+		System.out.println((char)rnd.nextInt(91));
+		
+		//char caracter=(char)(rnd.nextInt(91) + 65);
+		
+		System.out.println();
+		
+		//System.out.println(caracter);
+		
+	}
+}

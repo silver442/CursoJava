@@ -1,0 +1,42 @@
+package hernandez.silver.ejerciciospoo;
+
+import java.util.Random;
+
+public class UsoGeneradorContraseña {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Random rnd = new Random();
+		
+		GeneradorContraseñas contra=new GeneradorContraseñas(4,10);
+		
+		contra.setGeneraContraseña();
+		
+		contra.getContraseñas();
+		
+		/*for(int i=0;i<7;i++) {
+			
+			numAleatorio=rnd.nextInt(123);
+			
+			if(numAleatorio<10) {
+				System.out.println(numAleatorio);
+			}else if(numAleatorio>64 && numAleatorio<91) {
+				
+				caracter=(char)numAleatorio;
+				System.out.println(caracter);
+				
+			}else if(numAleatorio>96 && numAleatorio<123) {
+			
+				caracter=(char)numAleatorio;
+				System.out.println(caracter);
+			
+			}			
+			else {
+				
+				i--;
+			}
+			
+		}*/
+	}
+}

@@ -1,5 +1,7 @@
 package hernandez.silver.ejerciciospoo;
 
+import java.util.Random;
+
 public class GeneradorContraseñas {
 
 	
@@ -12,9 +14,17 @@ public class GeneradorContraseñas {
 	}
 	
 	// Métodos getters
-	public String getContraseña() {
+	public void getContraseñas() {
 		
-		return "La contraseña es: ";
+		for(String[] elemento:contra) {
+			
+			for(String elem:elemento) {
+			
+				System.out.print(elem);
+				
+			}
+			System.out.println();
+		}
 	}
 	
 	public int getLongitud() {
@@ -25,27 +35,87 @@ public class GeneradorContraseñas {
 	//Metodos setter
 	public void setGeneraContraseña() {
 	
-		contra[]=new contra[tamanoArray];
+		Random rnd = new Random();
 		
-	}
-	
-	public String contraSegura() {
+		int numAleatorio;
 		
-		if(3>4) {
-			return "segura";
-		}else {
+		char caracter;
+		
+		contra=new String[tamanoArray][longitud];
+		
+		for(int i=0;i<tamanoArray;i++) {
 			
-			return "no segura";
+			for(int j=0;j<longitud;j++) {
+			
+				numAleatorio=rnd.nextInt(123);
+				
+				if(numAleatorio<10) {
+					contra[i][j]=""+numAleatorio;
+				}else if(numAleatorio>64 && numAleatorio<91) {
+					
+					caracter=(char)numAleatorio;
+					contra[i][j]=""+caracter;
+					
+				}else if(numAleatorio>96 && numAleatorio<123) {
+				
+					caracter=(char)numAleatorio;
+					contra[i][j]=""+caracter;
+				}			
+				else if(i==0){
+					
+					i=0;
+					
+				}else {
+					
+					i--;
+				}
+			}	
 		}
 	}
 	
-	
+	public void getContraSegura() {
+		
+		for(int i=0;i<tamanoArray-1;i++) {
+			
+			for(int j=0;i<longitud-1;j++) {
+			
+				caract = (char)(this.contra[i][j].charAt(j));
+				
+				caracte=(int)caract;
+				
+				if(caracte<10) {
+					
+					numeros++;
+				
+				}else if(caracte>64 && caracte<91) {
+					
+					mayusculas++;
+					
+				}else if(caracte>96 && caracte<123) {
+				
+					minusculas++;
+				}
+			}
+			
+			if(numeros>5 && minusculas>1 && mayusculas>2) {
+				System.out.println("Contraseña segura");
+			}else {
+				
+				System.out.println("Contraseña debil");;
+			}
+		}
+		
+	}
 	
 	private int tamanoArray;
 	
 	private int longitud;
 	
-	private String contra[];
+	private String[][] contra;
 	
+	private char caract;
 	
+	private int caracte;
+	
+	private int numeros, minusculas, mayusculas;
 }

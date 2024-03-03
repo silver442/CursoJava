@@ -1,0 +1,13 @@
+package hernandez.silver.ejerciciospoo;
+
+import java.util.Random.*;
+
+public class UsoGeneradorContraseña {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Random rnd = new Random();
+		
+	}
+}

@@ -1,6 +1,6 @@
-package hernandez.silvestre.poo;
+package hernandez.silver.ejerciciospoo;
 
-public class UsoEmpleados {
+public class UsoGeneradorContraseña {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
