@@ -1,0 +1,13 @@
+package hernandez.silvestre.pooAbstractas;
+
+import java.sql.Date;
+
+public class Uso_Personas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Empleados Juan=new Empleados("Juan", new Date(5465454), 2500);
+	}
+
+}

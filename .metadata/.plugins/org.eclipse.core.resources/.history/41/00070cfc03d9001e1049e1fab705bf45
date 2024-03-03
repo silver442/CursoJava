@@ -1,0 +1,76 @@
+package hernandez.silver.ejerciciospoo;
+
+public abstract class Empleado {
+	
+	public Empleado(int DNI, String nombre, String apellidos, int annio) {
+		
+		this.DNI=DNI;
+		
+		this.nombre=nombre;
+		
+		this.Apellidos=apellidos;
+		
+		this.annio=annio;
+	}
+	
+	
+	public String imprimir() {
+		
+		return  null;
+	}
+	
+	public int getAnnio() {
+		return annio;
+	}
+	
+	public abstract double getSalario();
+	
+	private int DNI;
+	
+	private String nombre;
+	
+	private String Apellidos;
+	
+	private int annio;
+}
+
+class EmpleadoAsalariado extends Empleado{
+
+	public EmpleadoAsalariado(int DNI, String nombre, String apellidos, int annio, double salario) {
+		super(DNI, nombre, apellidos, annio);
+		// TODO Auto-generated constructor stub
+		
+		this.salario=salario;
+	}
+
+	@Override
+	public double getSalario() {
+		// TODO Auto-generated method stub
+		
+		int annios=this.getAnnio() - 2024;
+		
+		if(annios<2) {
+			
+			return salario;
+		}else if(annios>=2 && annios<=3) {
+			
+			salario=salario*1.07;
+			
+			return salario;
+		}else if(annios>=4 && annios<=8) {
+			
+			salario=salario*1.11;
+			
+			return salario;
+		}else {
+			
+			salario=salario*1.17;
+			
+			return salario;
+			
+		}
+
+	}
+	
+	private double salario;
+}

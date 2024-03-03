@@ -1,0 +1,15 @@
+package hernandez.silver.ejerciciospoo;
+
+public class Empleado {
+	
+	
+	
+	
+	private int DNI;
+	
+	private String nombre;
+	
+	private String Apellidos;
+	
+	private int annio;
+}
