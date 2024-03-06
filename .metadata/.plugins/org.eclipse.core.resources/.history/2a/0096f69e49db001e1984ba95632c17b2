@@ -1,0 +1,42 @@
+package hernandez.silver.ejerciciospoo;
+
+public class Coche implements Vehiculo{
+
+	public Coche(double Velocidad) {
+		
+		velocidadInicial=Velocidad;
+	}
+	
+	public void setAcelerar(double velocidad) {
+		
+		velocidadFinal=velocidadInicial + velocidad;
+		
+		if(velocidadFinal>=VELOCIDAD_MAXIMA) {
+			
+		}
+	}
+	
+	public double getAcelerar() {
+		// TODO Auto-generated method stub
+		return velocidadFinal;
+	}
+
+	public void setFrenar(double velocidad) {
+		velocidadFinal=velocidadInicial - velocidad;
+	}
+	@Override
+	public double getFrenar() {
+		// TODO Auto-generated method stub
+		return velocidadFinal;
+	}
+
+	@Override
+	public int getPlazas() {
+		// TODO Auto-generated method stub
+		return 5; //numero de plazas para coche
+	}
+
+	double velocidadInicial;
+	
+	double velocidadFinal;
+}

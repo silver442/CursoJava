@@ -1,0 +1,6 @@
+package hernandez.silvestre.pooAbstractas;
+
+public interface ParaTrabajadores {
+
+	double setBonus(double gratificacion);
+}

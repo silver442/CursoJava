@@ -22,7 +22,7 @@ public abstract class Personas {
 	
 }
 
-class Empleados extends Personas{
+class Empleados extends Personas implements Comparable, ParaTrabajadores{
 
 	public Empleados(String nom, Date fechaAlta, double sueldo) {
 		super(nom);
@@ -43,9 +43,27 @@ class Empleados extends Personas{
 	private double sueldo;
 	
 	private Date fechaAlta;
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		Empleados otroEmpleado=(Empleados)o;
+		
+		if(this.sueldo<otroEmpleado.sueldo) return -1;
+		
+		if(this.sueldo>otroEmpleado.sueldo) return 1;
+		
+		return 0;
+	}
+
+	@Override
+	public double setBonus(double gratificacion) {
+		// TODO Auto-generated method stub
+		return ParaTrabajadores.bonus+gratificacion;
+	}
 }
 
-class Jefes extends Empleados{
+class Jefes extends Empleados implements ParaJefes{
 
 	public Jefes(String nom, Date fechaAlta, double sueldo) {
 		super(nom, fechaAlta, sueldo);
@@ -56,9 +74,29 @@ class Jefes extends Empleados{
 		
 		this.incentivo=incentivo;
 	}
+
+	@Override
+	public void setCargo(String cargo) {
+		// TODO Auto-generated method stub
+		this.cargo=cargo;	}
+
+	@Override
+	public String getCargo() {
+		// TODO Auto-generated method stub
+		return "\n Además tiene el cargo de " + cargo;
+	}
 	
 	private double incentivo;
 	
+	private String cargo;
+
+	@Override
+	public double setBonus(double gratificacion) {
+		// TODO Auto-generated method stub
+		
+		double prima=2000;
+		return prima + gratificacion + ParaTrabajadores.bonus;
+	}
 }
 
 class Alumnos extends Personas{

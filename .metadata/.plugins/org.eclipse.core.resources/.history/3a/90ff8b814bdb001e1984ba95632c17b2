@@ -1,0 +1,14 @@
+package hernandez.silver.ejerciciospoo;
+
+public interface Vehiculo {
+
+	void setAcelerar(double velocidad);
+	double getAcelerar();
+	
+	void setFrenar(double velocidad);
+	double getFrenar();
+	
+	int getPlazas();
+	
+	double VELOCIDAD_MAXIMA=120;
+}

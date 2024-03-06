@@ -1,0 +1,32 @@
+package hernandez.silvestre.pooAbstractas;
+
+public class PruebaTemporizador2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Reloj{
+	
+	public Reloj(int intervalo, boolean sonido) {
+		
+		this.intervalo=intervalo;
+		
+		this.sonido=sonido;
+		
+	}
+	
+	public void ejecutarTemporizador() {
+		
+		ActionListener oyente=new DameLaHora();
+		
+		Timer miTemporizador=new Timer(intervalo);
+	}
+	
+	private int intervalo;
+	
+	private boolean sonido;
+}

@@ -1,0 +1,29 @@
+package hernandez.silver.ejerciciospoo;
+
+public class Coche implements Vehiculo{
+
+	public void setAcelerar(double velocidad) {
+		
+	}
+	
+	public double getAcelerar() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void setFrenar(double velocidad) {
+		
+	}
+	@Override
+	public double getFrenar() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getPlazas() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

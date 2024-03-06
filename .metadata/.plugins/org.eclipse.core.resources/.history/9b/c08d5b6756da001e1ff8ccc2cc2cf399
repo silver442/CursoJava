@@ -1,0 +1,8 @@
+package hernandez.silvestre.pooAbstractas;
+
+public interface ParaTrabajadores extends ParaJefes{
+
+	double setBonus(double gratificacion);
+	
+	double bonus=200;
+}

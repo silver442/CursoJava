@@ -1,0 +1,22 @@
+package hernandez.silvestre.pooAbstractas;
+
+import java.awt.event.*;
+
+import javax.swing.*;
+
+public class PruebaTemporizador {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Timer miTemporizador=new Timer(5000, oyente);
+		
+	}
+
+}
+
+class Temporizador implements ActionListener{
+	
+	
+	
+}

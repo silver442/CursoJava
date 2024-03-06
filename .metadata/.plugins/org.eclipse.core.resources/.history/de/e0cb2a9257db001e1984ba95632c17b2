@@ -1,0 +1,13 @@
+package interfacesGraficas;
+
+import javax.swing.*;
+
+public class PrimerFrame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		JFrame miVentana=new JFrame();
+		
+	}
+}

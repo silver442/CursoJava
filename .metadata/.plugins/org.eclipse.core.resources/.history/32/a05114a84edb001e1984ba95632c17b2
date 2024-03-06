@@ -1,0 +1,38 @@
+package hernandez.silvestre.pooAbstractas;
+
+import javax.swing.Timer;
+import java.awt.event.*;
+
+public class PruebaTemporizador2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Reloj
+		
+	}
+}
+
+class Reloj{
+	
+	public Reloj(int intervalo, boolean sonido) {
+		
+		this.intervalo=intervalo;
+		
+		this.sonido=sonido;
+		
+	}
+	
+	public void ejecutarTemporizador() {
+		
+		ActionListener oyente=new DameLaHora();
+		
+		Timer miTemporizador=new Timer(intervalo, oyente);
+	
+		miTemporizador.start();
+	}
+	
+	private int intervalo;
+	
+	private boolean sonido;
+}

@@ -1,0 +1,35 @@
+package hernandez.silver.ejerciciospoo;
+
+public class Moto implements Vehiculo{
+
+	@Override
+	public void setAcelerar(double velocidad) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public double getAcelerar() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setFrenar(double velocidad) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public double getFrenar() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getPlazas() {
+		// TODO Auto-generated method stub
+		return 2;
+	}
+
+}

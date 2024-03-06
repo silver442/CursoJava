@@ -1,0 +1,12 @@
+package hernandez.silver.ejerciciospoo;
+
+public interface Vehiculo {
+
+	double getAcelerar();
+	
+	double getFrenar();
+	
+	int getPlazas();
+	
+	double VELOCIDAD_MAXIMA=120;
+}
