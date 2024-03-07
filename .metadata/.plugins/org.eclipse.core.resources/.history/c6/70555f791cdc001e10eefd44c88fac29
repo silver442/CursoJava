@@ -1,0 +1,17 @@
+package ejerciciosInterfacesGraficas;
+
+import javax.swing.JFrame;
+
+public class EjercicioFrame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}
+
+class MiFrame extends JFrame{
+	
+	
+	
+}

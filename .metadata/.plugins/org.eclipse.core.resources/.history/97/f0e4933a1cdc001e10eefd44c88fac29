@@ -1,0 +1,10 @@
+package ejerciciosInterfacesGraficas;
+
+public class EjercicioFrame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

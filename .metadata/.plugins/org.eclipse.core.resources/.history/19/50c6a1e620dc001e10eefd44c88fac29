@@ -1,7 +1,6 @@
 package interfacesGraficas;
 
 import java.awt.Frame;
-import java.awt.Image;
 import java.awt.Toolkit;
 
 import javax.swing.*;
@@ -49,12 +48,6 @@ class MiJFrame extends JFrame{
 		setTitle("Ventana de pruebas");// dar titulo al Frame
 		
 		Toolkit miSistema=Toolkit.getDefaultToolkit();
-		
-		//Image miIcono=miSistema.getImage("EsferaAzul.jpg"); // partiendo de la raiz
-		
-		Image miIcono=miSistema.getImage("src/interfacesGraficas/EsferaAzul.jpg");
-		
-		setIconImage(miIcono);
 		
 		setVisible(true);
 	}

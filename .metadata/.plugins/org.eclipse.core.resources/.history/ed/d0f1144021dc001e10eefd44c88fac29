@@ -50,9 +50,7 @@ class MiJFrame extends JFrame{
 		
 		Toolkit miSistema=Toolkit.getDefaultToolkit();
 		
-		//Image miIcono=miSistema.getImage("EsferaAzul.jpg"); // partiendo de la raiz
-		
-		Image miIcono=miSistema.getImage("src/interfacesGraficas/EsferaAzul.jpg");
+		Image miIcono=miSistema.getImage("EsferaAzul.jpg");
 		
 		setIconImage(miIcono);
 		
