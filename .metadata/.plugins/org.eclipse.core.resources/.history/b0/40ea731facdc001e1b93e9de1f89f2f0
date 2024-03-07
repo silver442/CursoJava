@@ -1,0 +1,39 @@
+package interfacesGraficas;
+
+import java.awt.Graphics;
+
+import javax.swing.*;
+
+public class EscribiendoEnMarco {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoTexto miMarco=new MarcoTexto();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	}
+
+}
+
+class  MarcoTexto extends JFrame{
+	
+	public MarcoTexto() {
+		
+		setBounds(400, 200, 600, 450);
+		
+		setTitle("Escritura en JFrame");
+		
+		setVisible(true);
+	}
+}
+
+class PrimerPanel extends JPanel{
+	
+	public void paintComponent(Graphics g) { // método que se invoca automaticamente
+		
+		super.paintComponent(g);
+		
+		g.drawString("Primer panel", 20, 20);
+		
+	}
+}

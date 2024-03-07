@@ -1,0 +1,27 @@
+package interfacesGraficas;
+
+import javax.swing.*;
+
+public class DibujandoEnJFrame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoDibujos mimarco=new MarcoDibujos();
+		
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+}
+
+class MarcoDibujos extends JFrame{
+	
+	public MarcoDibujos() {
+		
+		setBounds(300,300,800,450);
+		
+		setVisible(true);
+	}
+	
+	
+}
