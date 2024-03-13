@@ -1,0 +1,41 @@
+package eventos;
+
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+
+import javax.swing.JFrame;
+
+public class EventoVentana {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoEventoVentana mimarco=new MarcoEventoVentana();
+		
+		mimarco.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		
+		mimarco.addWindowListener(new EventosDeVentana());
+	}
+
+}
+
+class MarcoEventoVentana extends JFrame{
+	
+	public MarcoEventoVentana() {
+		
+		setBounds(300, 300, 600, 350);
+		
+		setVisible(true);
+	}
+}
+
+class EventosDeVentana extends WindowAdapter{
+
+	public void windowClosed(WindowEvent e){
+		
+		System.out.println("Gracias por trabajar en la App. Hasta pronto");
+		
+	}
+	
+}

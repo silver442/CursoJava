@@ -1,0 +1,21 @@
+package eventos;
+
+import javax.swing.*;
+
+public class EventoTeclado {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+}
+
+class MarcoEventoTeclado extends JFrame{
+	
+	public MarcoEventoTeclado() {
+		
+		setBounds(300, 300, 600, 350);
+		
+		setVisible(true);
+	}
+}

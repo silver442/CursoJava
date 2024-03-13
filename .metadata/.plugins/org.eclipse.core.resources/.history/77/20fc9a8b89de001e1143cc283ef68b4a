@@ -1,0 +1,78 @@
+package eventos;
+
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+
+import javax.swing.JFrame;
+
+public class EventoVentana {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoEventoVentana mimarco=new MarcoEventoVentana();
+		
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		mimarco.addWindowListener(new EventosDeVentana());
+	}
+
+}
+
+class MarcoEventoVentana extends JFrame{
+	
+	public MarcoEventoVentana() {
+		
+		setBounds(300, 300, 600, 350);
+		
+		setVisible(true);
+	}
+}
+
+class EventosDeVentana implements WindowListener{
+
+	@Override
+	public void windowOpened(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Ventana abierta");
+	}
+
+	@Override
+	public void windowClosing(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowClosed(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowIconified(WindowEvent e) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Ventana minimizada");
+	}
+
+	@Override
+	public void windowDeiconified(WindowEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowActivated(WindowEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("Ventana Activada");
+	}
+
+	@Override
+	public void windowDeactivated(WindowEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("Ventana en segundo plano");
+	}
+	
+}

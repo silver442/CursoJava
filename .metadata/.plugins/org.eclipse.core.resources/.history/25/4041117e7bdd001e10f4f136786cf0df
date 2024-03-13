@@ -1,0 +1,39 @@
+package interfacesGraficas;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class claseBaseGraficos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Marco mimarco=new Marco();
+	
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+}
+
+class Marco extends JFrame{
+	
+	public MarcoImagenes() {
+		
+		setBounds(300,300,800,450);
+		
+		LaminaImagenes milamina=new LaminaImagenes();
+		
+		add(milamina);
+		
+		setVisible(true);
+	}
+}
+
+class LaminaImagenes extends JPanel{
+	
+	public void paintComponent(Graphics g) {
+	
+		super.paintComponent(g);
+		
+	}
+}

@@ -1,0 +1,26 @@
+package eventos;
+
+import javax.swing.*;
+
+public class EventoTeclado {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoEventoTeclado mimarco=new MarcoEventoTeclado();
+		
+		mimarco.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		
+	}
+}
+
+class MarcoEventoTeclado extends JFrame{
+	
+	public MarcoEventoTeclado() {
+		
+		setBounds(300, 300, 600, 350);
+		
+		setVisible(true);
+	}
+}
+

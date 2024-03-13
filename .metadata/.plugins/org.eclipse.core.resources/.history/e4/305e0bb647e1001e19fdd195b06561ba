@@ -1,0 +1,28 @@
+package eventos;
+
+import javax.swing.*;
+
+public class VariasFuentes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class MarcoFuentes  extends JFrame{
+	
+	public MarcoFuentes() {
+		
+		setBounds(600,300,500,350);
+		
+		add(new LaminaFuentes());
+		
+		setVisible(true);
+	}
+}
+
+class LaminaFuentes extends JPanel{
+	
+}

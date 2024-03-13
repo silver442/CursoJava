@@ -1,0 +1,18 @@
+package ejerciciosEventos;
+
+import javax.swing.*;
+
+public class ejecricioEventosI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class MarcoEjercicio extends JFrame{
+	
+	setBounds(200,200,150,100);
+	
+}

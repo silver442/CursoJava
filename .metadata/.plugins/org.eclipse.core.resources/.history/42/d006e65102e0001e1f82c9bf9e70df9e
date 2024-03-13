@@ -1,0 +1,35 @@
+package eventos;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class EventoFoco {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MarcoFoco mimarco=new MarcoFoco();
+		
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		mimarco.setVisible(true);
+	}
+}
+
+class MarcoFoco extends JFrame{
+	
+	public MarcoFoco() {
+		
+		setBounds (500,300,400,250);
+		
+		add(new Lamina_Marco_Foco());
+	}
+}
+
+class Lamina_Marco_Foco extends JPanel{
+	
+	public void paintComponent(Graphics g) {
+		
+		super.paintComponent(g);
+	}
+	
+}

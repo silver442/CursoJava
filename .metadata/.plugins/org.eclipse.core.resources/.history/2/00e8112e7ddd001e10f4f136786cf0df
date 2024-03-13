@@ -1,0 +1,42 @@
+package interfacesGraficas;
+
+import java.awt.*;
+import java.io.File;
+
+import javax.swing.*;
+
+public class ManejoImagenes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoImagenes mimarco=new MarcoImagenes();
+	
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+}
+
+class MarcoImagenes extends JFrame{
+	
+	public MarcoImagenes() {
+		
+		setBounds(300,300,800,450);
+		
+		LaminaImagenes milamina=new LaminaImagenes();
+		
+		add(milamina);
+		
+		setVisible(true);
+	}
+}
+
+class LaminaImagenes extends JPanel{
+	
+	public void paintComponent(Graphics g) {
+	
+		super.paintComponent(g);
+		
+		File miImagen=new File("src/interfacesGraficas/casa.png");
+	}
+}

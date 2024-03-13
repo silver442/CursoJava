@@ -1,0 +1,16 @@
+package interfacesGraficas;
+
+public class LetrasEnLocal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String [] misFuentes=GraphicsEnvironment.getLocalGraphicsEnviroment().getAvailableFontFamilyNames();
+		
+		for(String nombreFuente:misFuentes) {
+			
+			System.out.println(nombreFuente);
+		}
+		
+	}
+}
