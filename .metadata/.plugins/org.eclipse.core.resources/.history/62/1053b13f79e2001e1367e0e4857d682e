@@ -1,0 +1,36 @@
+package componentesSwing;
+
+import javax.swing.*;
+import java.awt.event.*;
+
+public class EjemploRadioButton {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoRadioButton mimarco=new MarcoRadioButton();
+		
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
+
+class MarcoRadioButton extends JFrame{
+	
+	public MarcoRadioButton() {
+		
+		setBounds(600,300,600,400);
+		
+		add(new LaminaRadioButton());
+		
+		setVisible(true);
+			
+	}
+}
+
+class LaminaRadioButton extends JPanel{
+	
+	public LaminaRadioButton() {
+		
+	}
+}

@@ -1,0 +1,10 @@
+package componentesSwing;
+
+public class EjemploSpinner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

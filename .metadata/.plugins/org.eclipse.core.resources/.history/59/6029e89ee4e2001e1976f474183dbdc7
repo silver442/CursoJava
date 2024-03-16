@@ -1,0 +1,45 @@
+package componentesSwing;
+
+import java.awt.BorderLayout;
+import java.awt.Font;
+
+import javax.swing.*;
+
+public class EjemploJComboBox {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoComboBox mimarco=new MarcoComboBox();
+		
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
+
+class MarcoComboBox extends JFrame{
+	
+	public MarcoComboBox() {
+		
+		setBounds(600, 300, 600, 400);
+		
+		add(new LaminaComboBox());
+		
+		setVisible(true);
+	}
+}
+
+class LaminaComboBox extends JPanel{
+	
+	public LaminaComboBox() {
+	
+		setLayout(new BorderLayout());
+		
+		texto=new JLabel("En breve aprenderemos JavaFX");
+	
+		texto.setFont(new Font("Serif", Font.PLAIN, 18));
+		
+	}
+	
+	JLabel texto;
+}

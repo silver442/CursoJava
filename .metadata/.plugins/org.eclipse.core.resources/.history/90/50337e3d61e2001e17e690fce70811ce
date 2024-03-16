@@ -1,0 +1,10 @@
+package ejercicioComponentes;
+
+public class ComprobacionEmail {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

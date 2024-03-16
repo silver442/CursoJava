@@ -1,0 +1,38 @@
+package componentesSwing;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class EventoCuadroTexto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoCuadroEvento mimarco=new MarcoCuadroEvento();
+		
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+}
+
+class MarcoCuadroEvento extends JFrame{
+	
+	public MarcoCuadroEvento() {
+		
+		setBounds(600,300,600,400);
+		
+		add(new LaminaCuadroEvento());
+		
+		setVisible(true);
+	}
+}
+
+class LaminaCuadroEvento extends JPanel{
+	
+	public LaminaCuadroEvento() {
+		
+		JTextField cuadroTexto=new JTextField(20);
+		
+		add(cuadroTexto);
+	}
+}
