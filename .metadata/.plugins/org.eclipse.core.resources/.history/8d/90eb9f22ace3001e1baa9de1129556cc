@@ -1,0 +1,53 @@
+package ejercicioComponentes;
+
+import java.awt.*;
+
+import javax.swing.*;
+
+public class PracticaProcesadorTextos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoProcesadorTexto mimarco=new MarcoProcesadorTexto();
+		
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
+
+class MarcoProcesadorTexto extends JFrame{
+	
+	public MarcoProcesadorTexto() {
+		
+		setBounds(600, 300, 600, 400);
+		
+		add(new LaminaProcesadorTextos());
+		
+		setVisible(true);
+	}
+}
+
+class LaminaProcesadorTextos extends JFrame{
+	
+	public LaminaProcesadorTextos() {
+		
+		setLayout(new BorderLayout());
+		
+		JPanel laminaMenu=new JPanel();
+		
+		JMenuBar miBarra=new JMenuBar();
+		
+		JMenu fuente=new JMenu("Fuente");
+		JMenu estilo=new JMenu("Estilo");
+		JMenu tamagno=new JMenu("Tamaño");
+		
+		miBarra.add(fuente);
+		miBarra.add(estilo);
+		miBarra.add(tamagno);
+		
+		laminaMenu.add(miBarra);
+		
+		add(laminaMenu, BorderLayout.NORTH);
+		
+	}
+}

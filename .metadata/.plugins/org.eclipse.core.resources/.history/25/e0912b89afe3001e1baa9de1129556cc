@@ -1,0 +1,104 @@
+package ejercicioComponentes;
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class PracticaProcesadorTextos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoProcesadorTexto mimarco=new MarcoProcesadorTexto();
+		
+		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
+
+class MarcoProcesadorTexto extends JFrame{
+	
+	public MarcoProcesadorTexto() {
+		
+		setBounds(600, 300, 600, 400);
+		
+		add(new LaminaProcesadorTextos());
+		
+		setVisible(true);
+	}
+}
+
+class LaminaProcesadorTextos extends JPanel{
+	
+	public LaminaProcesadorTextos() {
+		
+		setLayout(new BorderLayout());
+		
+		JPanel laminaMenu=new JPanel();
+		
+		//-------Construcción bara de manú--------------
+		
+		JMenuBar miBarra=new JMenuBar();
+		
+		fuente=new JMenu("Fuente");
+		estilo=new JMenu("Estilo");
+		tamagno=new JMenu("Tamaño");
+		
+		configuraMenu("Arial", "fuente", "", 1,1);
+		
+		miBarra.add(fuente);
+		miBarra.add(estilo);
+		miBarra.add(tamagno);
+		
+		//------------------------------------------------
+		
+		//----------- Elementos de menú estilos-------------
+		
+		JMenuItem negrita=new JMenuItem("Negrita");
+		JMenuItem cursiva=new JMenuItem("Cursiva");
+		
+		estilo.add(negrita);
+		estilo.add(cursiva);
+		
+		//------------------------------------------------
+		
+		//----------- Elementos de menú Tamaño-------------
+		
+		JMenuItem tam_12=new JMenuItem("12");
+		JMenuItem tam_16=new JMenuItem("16");
+		JMenuItem tam_18=new JMenuItem("18");
+		JMenuItem tam_20=new JMenuItem("20");
+		
+		tamagno.add(tam_12);
+		tamagno.add(tam_16);
+		tamagno.add(tam_18);
+		tamagno.add(tam_20);
+		
+		//------------------------------------------------
+		
+		laminaMenu.add(miBarra);
+		
+		add(laminaMenu, BorderLayout.NORTH);
+		
+		miArea=new JTextPane();
+		
+		add(miArea, BorderLayout.CENTER);
+		
+	}
+	
+	public void configuraMenu(String rotulo, String menu, String tipoLetra, int estilos, int tamagnos) {
+		
+		JMenuItem elemMenu=new JMenuItem(rotulo);
+		
+		if(menu=="fuente") fuente.add(elemMenu);
+		
+		else if(menu=="estilo") estilo.add(elemMenu);
+	
+		else if(menu=="tamaño") tamagno.add(elemMenu);
+	}
+	
+	private JTextPane miArea;
+	private JMenu fuente, estilo, tamagno;
+
+}

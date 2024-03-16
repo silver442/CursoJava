@@ -1,0 +1,36 @@
+package ejercicioComponentes;
+
+import javax.swing.*;
+
+public class EjercicioProcesadorTexto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoProcesadorTexto miMarco=new MarcoProcesadorTexto();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+}
+
+class MarcoProcesadorTexto extends JFrame{
+	
+	public MarcoProcesadorTexto() {
+		
+		setBounds(600,400, 600, 350);
+		
+		add(new LaminaProcesadorTexto());
+		
+		setVisible(true);
+		
+	}
+	
+}
+
+class LaminaProcesadorTexto extends JPanel{
+	
+	public LaminaProcesadorTexto() {
+		
+	}
+}
