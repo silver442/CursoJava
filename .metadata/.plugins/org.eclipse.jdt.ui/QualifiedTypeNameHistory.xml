@@ -23,7 +23,6 @@
     <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
     <fullyQualifiedTypeName name="java.awt.event.MouseAdapter"/>
     <fullyQualifiedTypeName name="java.awt.event.MouseMotionListener"/>
-    <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
     <fullyQualifiedTypeName name="java.awt.Graphics"/>
     <fullyQualifiedTypeName name="java.awt.event.FocusListener"/>
@@ -31,10 +30,22 @@
     <fullyQualifiedTypeName name="java.awt.TextField"/>
     <fullyQualifiedTypeName name="javax.swing.text.Document"/>
     <fullyQualifiedTypeName name="javax.swing.event.DocumentListener"/>
-    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
     <fullyQualifiedTypeName name="java.awt.Font"/>
     <fullyQualifiedTypeName name="javax.swing.event.ChangeListener"/>
     <fullyQualifiedTypeName name="java.awt.Dimension"/>
-    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.FontFamilyAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
     <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
+    <fullyQualifiedTypeName name="java.awt.event.InputEvent"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.FontSizeAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.BoldAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ItalicAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.UnderlineAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.AlignmentAction"/>
+    <fullyQualifiedTypeName name="javax.swing.Spring"/>
 </qualifiedTypeNameHistroy>

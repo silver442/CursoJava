@@ -1,0 +1,42 @@
+package disposicionesSwing;
+
+import javax.swing.*;
+
+public class PracticaBox {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MarcoBox miMarco=new MarcoBox();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		miMarco.setVisible(true);
+	}
+}
+
+class MarcoBox extends JFrame{
+	
+	public MarcoBox() {
+		
+		setTitle("Disposición BOx");
+		
+		setBounds(700,400,200,200);
+		
+		JLabel nUsuario=new JLabel("Nombre");
+		
+		JTextField cUsuario=new JTextField(10);
+		
+		// para que no redimencione el tamaño del JTextField el usuario
+		cUsuario.setMaximumSize(cUsuario.getPreferredSize());
+		
+		//crea la primera caja horizontal
+		Box cajaUsuario=Box.createHorizontalBox();
+		
+		cajaUsuario.add(nUsuario);
+		cajaUsuario.add(cUsuario);
+		
+		
+		
+	}
+}

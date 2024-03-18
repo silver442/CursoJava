@@ -1,0 +1,44 @@
+package disposicionesSwing;
+
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import interfacesGraficas.Lamina;
+
+public class PracticaSpring {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		MarcoMuelle miMarco=new MarcoMuelle();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+
+}
+
+class MarcoMuelle extends JFrame{
+	
+	public MarcoMuelle() {
+		
+		setBounds(300,400,1000,350);
+		
+		LaminaMuelle milamina=new LaminaMuelle();
+		
+		add(milamina);
+		
+		setVisible(true);
+	}
+}
+
+class LaminaMuelle extends JPanel{
+	
+	public void paintComponent(Graphics g) {
+	
+		super.paintComponent(g);
+		
+	}
+}

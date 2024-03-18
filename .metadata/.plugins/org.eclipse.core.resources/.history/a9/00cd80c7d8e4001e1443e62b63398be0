@@ -1,0 +1,40 @@
+package disposicionesSwing;
+
+import java.awt.Graphics;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import interfacesGraficas.Lamina;
+
+public class DisposicionLibre {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class MarcoDispLibre extends JFrame{
+	
+	public MarcoDispLibre() {
+		
+		setBounds(450,350,350,400);
+		
+		LaminaDispLibre milamina=new LaminaDispLibre();
+		
+		add(milamina);
+		
+		setVisible(true);
+	}
+}
+
+class LaminaDispLibre extends JPanel{
+	
+	public LaminaDispLibre() {
+		
+	}
+		
+	
+}
