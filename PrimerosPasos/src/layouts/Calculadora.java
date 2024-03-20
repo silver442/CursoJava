@@ -2,6 +2,7 @@ package layouts;
 
 import java.awt.*;
 import java.awt.event.*;
+import java.net.URL;
 
 import javax.swing.*;
 
@@ -30,6 +31,14 @@ class MarcoCalculadora extends JFrame{
 		PanelCalculadora milamina=new PanelCalculadora();
 		
 		add(milamina);
+		
+		Toolkit mihardware=Toolkit.getDefaultToolkit();
+		
+		URL ruta_imagen=MarcoCalculadora.class.getResource("EsferaAzul.jpg");
+		
+		Image miIcono=mihardware.getImage(ruta_imagen);
+		
+		setIconImage(miIcono);
 	}
 }
 
