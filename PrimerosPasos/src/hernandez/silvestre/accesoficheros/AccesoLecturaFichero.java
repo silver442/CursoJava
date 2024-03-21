@@ -1,6 +1,8 @@
 package hernandez.silvestre.accesoficheros;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class AccesoLecturaFichero {
 
@@ -23,13 +25,16 @@ class LeerFichero{
 			
 			FileReader entrada=new FileReader("C:/Users/silve/Downloads/primerfichero.txt");
 		
-			int caracter=entrada.read();
+			BufferedReader miBuffer=new BufferedReader(entrada);
 			
-			while(caracter!=-1) {
+			//lee lenea a lenea
+			String linea="";
+			
+			while(linea!=null) {
 				
-				System.out.print((char)caracter);
+				linea=miBuffer.readLine();
 				
-				caracter=entrada.read();
+				if(linea!=null) System.out.println(linea);
 				
 			}
 			entrada.close();
