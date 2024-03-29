@@ -23,6 +23,7 @@
 	<section name="ZipFileImportWizard">
 		<item key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\silve\Downloads\Video168.zip"/>
 			<item value="C:\Users\silve\Downloads\video143.zip"/>
 			<item value="C:\Users\silve\Downloads\video130-131.zip"/>
 		</list>
