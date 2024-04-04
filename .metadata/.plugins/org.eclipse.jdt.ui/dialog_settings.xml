@@ -5,7 +5,7 @@
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo.comments" value="false"/>
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo" value="false"/>
 	<item key="filters_last_used" value="filter_imports;"/>
-	<item key="org.eclipse.jdt.ui.lastextjar" value="D:\JavaFx\javafx-sdk-21.0.2\lib"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\silve\Downloads\mysql-connector-j-8.3.0"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -68,7 +68,7 @@
 	</section>
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
 		<item key="DIALOG_X_ORIGIN" value="149"/>
-		<item key="DIALOG_Y_ORIGIN" value="-112"/>
+		<item key="DIALOG_Y_ORIGIN" value="-63"/>
 		<item key="DIALOG_WIDTH" value="678"/>
 		<item key="DIALOG_HEIGHT" value="869"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
@@ -105,7 +105,7 @@
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item key="DIALOG_X_ORIGIN" value="149"/>
-		<item key="DIALOG_Y_ORIGIN" value="-104"/>
+		<item key="DIALOG_Y_ORIGIN" value="-63"/>
 		<item key="DIALOG_WIDTH" value="678"/>
 		<item key="DIALOG_HEIGHT" value="889"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
