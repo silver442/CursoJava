@@ -1,3 +1,5 @@
+<%@ page import = "hernandez.silvestre.calculosmatematicos.*" %>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -35,29 +37,10 @@ La suma de 6 y  2: <%= 6 + 2 %>
 
 <h1>Declaraciones</h1>
 
-<%!
-
-	int resultado;
-
-	public int suma(int num1, int num2){
-		
-		resultado=num1 + num2;
-		
-		return resultado;
-	}
-	
-	public int restar(int num1, int num2){
-		
-		resultado=num1 - num2;
-		
-		return resultado;
-	}
-
-
-%>
-
-La suma de 5 + 5 es: <%= suma(5,5) %>
+La suma de 5 + 5 es: <%= CalculosM.suma(5, 5) %>
 <br>
-la resta es: <%= restar(5,5) %>
+la resta es: <%= CalculosM.resta(5, 5) %>
+<br>
+La miltiplicación es: <%= CalculosM.multiplica(5, 5) %>
 </body>
 </html>
