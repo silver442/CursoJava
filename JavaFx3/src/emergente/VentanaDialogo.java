@@ -1,4 +1,4 @@
-package emergentes;
+package emergente;
 
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
