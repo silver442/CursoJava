@@ -1,5 +1,6 @@
 module JavaFx3 {
 	exports layoutPanes;
+	exports aplicacionCompleta;
 	requires javafx.controls;
 	requires javafx.graphics;
 	

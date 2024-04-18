@@ -134,18 +134,40 @@ public class AplicacionTextField extends Application {
 		
 		if(mensaje.length()==0) {
 			
-			mensaje="El jugador " + txtJugador.getText() + " que juega en "+ txtEquipo.getText() +
-					" anota " + txtPuntos.getText() + " puntos por partido.";
+			if(comprobarEntero(txtPuntos, "Debes introducir un valor numérico entero")) {
 			
-			VentanaEmergente.mostrar(mensaje, "Datos del jugador");
+				mensaje="El jugador " + txtJugador.getText() + " que juega en "+ txtEquipo.getText() +
+						" anota " + txtPuntos.getText() + " puntos por partido.";
+				
+				VentanaEmergente.mostrar(mensaje, "Datos del jugador");
+				
+			}
 			
+			else txtPuntos.requestFocus();
 		}
-		
 		else {
 			
 			VentanaEmergente.mostrar(mensaje, "¡Faltan datos!");
 		
 		}
+	}
+	
+	
+	private boolean comprobarEntero(TextField f, String mensaje) {
+		
+		try {
+			
+			Integer.parseInt(f.getText());
+			
+			return true;
+			
+		}catch(NumberFormatException e) {
+			
+			VentanaEmergente.mostrar(mensaje, "Error en los datos");
+			
+			return false;
+		}
+		
 	}
 
 	public static void main(String[] args) {
