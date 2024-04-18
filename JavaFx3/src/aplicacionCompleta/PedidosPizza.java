@@ -1,5 +1,6 @@
 package aplicacionCompleta;
 
+import emergente.VentanaEmergente;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
@@ -205,19 +206,90 @@ public class PedidosPizza extends Application{
 	
 	
 	
-	private Object btnCancel_Click() {
+	private void btnCancel_Click() {
 		// TODO Auto-generated method stub
-		return null;
+		
+		
+		miStage.close();
+		
 	}
 
 
 
-	private Object btnOk_Click() {
+	private void btnOk_Click() {
 		// TODO Auto-generated method stub
-		return null;
+		
+		// Creación del String con la información del cliente
+		
+		String msg="Cliente:\n\n";
+		
+		msg+="\t" + cuadroNombre.getText() + "\n";
+		
+		msg+="\t" + cuadroDireccion.getText() + "\n";
+		
+		msg+="\t" + cuadroTfno.getText() + "\n";
+	
+		msg+="Has pedido: Tamaño: ";
+		
+		// Añadir el tamaño
+		
+		if(radioPeq.isSelected()) msg+=" pequeño";
+		
+		if(radioMed.isSelected()) msg+=" mediano";
+		
+		if(radioGran.isSelected()) msg+=" grande";
+	
+		// Añadir la masa
+		
+		if(radioFina.isSelected()) msg+=" y masa fina con: ";
+		
+		if(radioNormal.isSelected()) msg+=" y masa Normal con: ";
+		
+		// Añadir los ingredientes
+		
+		String ingredientes="";
+		
+		ingredientes=construyeIngredientes(chkPepperoni, ingredientes);
+		
+		ingredientes=construyeIngredientes(chkQueso, ingredientes);
+		
+		ingredientes=construyeIngredientes(chkPimiento, ingredientes);
+		
+		ingredientes=construyeIngredientes(chkAceitunas, ingredientes);
+		
+		ingredientes=construyeIngredientes(chkCampi, ingredientes);
+		
+		ingredientes=construyeIngredientes(chkTomate, ingredientes);
+		
+		ingredientes=construyeIngredientes(chkAnchoas, ingredientes);
+		
+		if(ingredientes.equals("")) msg+=" sin ingredientes";
+		
+		else msg+=" y con los siguientes ingredientes:\n" + ingredientes;
+		
+		// mostrar el mensaje emergente final
+		
+		VentanaEmergente.mostrar(msg, "Detalles del pedido");
+		
+		
 	}
 
-
+	public String construyeIngredientes(CheckBox chk, String msg) {
+		
+		if(chk.isSelected()) {
+			
+			if(!msg.equals("")) msg+=", ";
+			
+			msg+=chk.getText();
+			
+			
+			
+		}
+		
+		return msg;
+		
+	}
+	
 
 	public static void main(String[] args) {
 		launch(args);
