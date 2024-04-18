@@ -3,6 +3,7 @@ package aplicacionCompleta;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.scene.text.*;
@@ -148,9 +149,77 @@ public class PedidosPizza extends Application{
 		paneIngredientes.setPrefWrapLength(100);
 		
 		VBox paneIngredientesVertical=new VBox(lblIngredientes,paneIngredientes);
+	
+		//----Crear el pane de tamaño, masa e ingredientes
+		
+		HBox paneOrden=new HBox(50, paneTamano, paneMasa, paneIngredientes);
+	
+		//-----Crear panel central
+		
+		VBox paneCentral=new VBox(20,paneCliente,paneOrden);
+	
+		paneCentral.setPadding(new Insets(0,10,0,10));
+		
+		//----Creación del panel Inferior------------------
+		
+		Button btnOk=new Button("OK");
+		
+		btnOk.setPrefWidth(80);
+		
+		btnOk.setOnAction(e->btnOk_Click());
+		
+		Button btnCancel=new Button("Cancelar");
+		
+		btnCancel.setPrefWidth(80);
+		
+		btnCancel.setOnAction(e->btnCancel_Click());
+		
+		Region espacio=new Region();
+		
+		HBox paneInferior=new HBox(10, espacio, btnOk, btnCancel);
+		
+		paneInferior.setHgrow(espacio, Priority.ALWAYS);
+		
+		paneInferior.setPadding(new Insets(20,10,20,10));
+		
+		//----------Finalizar la Scene---------
+		
+		BorderPane panePrincipal=new BorderPane();
+		
+		panePrincipal.setTop(paneSuperior);
+		
+		panePrincipal.setCenter(paneCentral);
+		
+		panePrincipal.setBottom(paneInferior);
+		
+		//----Creación del Scene---
+		
+		Scene miScene=new Scene(panePrincipal);
+	
+		primaryStage.setScene(miScene);
+		
+		primaryStage.setTitle("Pedidos Pizza");
+	
+		primaryStage.show();
 	}
 	
-	public void main(String[] args) {
+	
+	
+	private Object btnCancel_Click() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	private Object btnOk_Click() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+	public static void main(String[] args) {
 		launch(args);
 	}
 	
