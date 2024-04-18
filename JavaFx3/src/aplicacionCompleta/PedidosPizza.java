@@ -153,7 +153,7 @@ public class PedidosPizza extends Application{
 	
 		//----Crear el pane de tamaño, masa e ingredientes
 		
-		HBox paneOrden=new HBox(50, paneTamano, paneMasa, paneIngredientes);
+		HBox paneOrden=new HBox(50, paneTamano, paneMasa, paneIngredientesVertical);
 	
 		//-----Crear panel central
 		
@@ -241,9 +241,9 @@ public class PedidosPizza extends Application{
 	
 		// Añadir la masa
 		
-		if(radioFina.isSelected()) msg+=" y masa fina con: ";
+		if(radioFina.isSelected()) msg+=" y masa fina con ";
 		
-		if(radioNormal.isSelected()) msg+=" y masa Normal con: ";
+		if(radioNormal.isSelected()) msg+=" y masa Normal con ";
 		
 		// Añadir los ingredientes
 		
@@ -265,11 +265,11 @@ public class PedidosPizza extends Application{
 		
 		if(ingredientes.equals("")) msg+=" sin ingredientes";
 		
-		else msg+=" y con los siguientes ingredientes:\n" + ingredientes;
+		else msg+="los siguientes ingredientes:\n" + ingredientes;
 		
 		// mostrar el mensaje emergente final
 		
-		VentanaEmergente.mostrar(msg, "Detalles del pedido");
+		VentanaEmergente.mostrar(msg, "Detalles del pedido", 400, 300);
 		
 		
 	}

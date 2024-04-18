@@ -5,7 +5,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.*;
 public class VentanaEmergente {
-	public static void mostrar(String mensaje, String titulo) {
+	public static void mostrar(String mensaje, String titulo, int ancho, int alto) {
 		
 		Stage miStage=new Stage();
 		
@@ -17,7 +17,7 @@ public class VentanaEmergente {
 		miBoton.setText("Cerrar");
 		miBoton.setOnAction(e->miStage.close());
 		BorderPane miPane=new BorderPane();
-		Scene miScene=new Scene(miPane, 150, 50);
+		Scene miScene=new Scene(miPane, ancho, alto);
 		miPane.setTop(miLabel);
 		miPane.setCenter(miBoton);
 		miStage.setScene(miScene);

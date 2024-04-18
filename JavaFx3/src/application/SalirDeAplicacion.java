@@ -53,9 +53,9 @@ public class SalirDeAplicacion extends Application {
 		
 		contadorDeClicks++;
 		
-		if(contadorDeClicks==1) VentanaEmergente.mostrar("Has hecho click una vez", "Click!");
+		if(contadorDeClicks==1) VentanaEmergente.mostrar("Has hecho click una vez", "Click!", 280, 250);
 		
-		else VentanaEmergente.mostrar("Has hecho click " + contadorDeClicks + " veces", "Click!");
+		else VentanaEmergente.mostrar("Has hecho click " + contadorDeClicks + " veces", "Click!", 280, 250);
 		
 	}
 	

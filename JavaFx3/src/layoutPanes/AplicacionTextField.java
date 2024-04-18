@@ -139,7 +139,7 @@ public class AplicacionTextField extends Application {
 				mensaje="El jugador " + txtJugador.getText() + " que juega en "+ txtEquipo.getText() +
 						" anota " + txtPuntos.getText() + " puntos por partido.";
 				
-				VentanaEmergente.mostrar(mensaje, "Datos del jugador");
+				VentanaEmergente.mostrar(mensaje, "Datos del jugador", 300,250);
 				
 			}
 			
@@ -147,7 +147,7 @@ public class AplicacionTextField extends Application {
 		}
 		else {
 			
-			VentanaEmergente.mostrar(mensaje, "¡Faltan datos!");
+			VentanaEmergente.mostrar(mensaje, "¡Faltan datos!", 300, 250);
 		
 		}
 	}
@@ -163,7 +163,7 @@ public class AplicacionTextField extends Application {
 			
 		}catch(NumberFormatException e) {
 			
-			VentanaEmergente.mostrar(mensaje, "Error en los datos");
+			VentanaEmergente.mostrar(mensaje, "Error en los datos", 300,250);
 			
 			return false;
 		}
