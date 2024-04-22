@@ -36,6 +36,10 @@ public class CreacionMenu extends Application{
 		
 		menuItemNuevo.setOnAction(e->accionMenus(e));
 		
+		menuItemGuardarComo=new MenuItem("Guardar como");
+		
+		menuItemGuardarComo.setOnAction(e->accionMenus(e));
+		
 		menuItemGuardar=new MenuItem("Guardar");
 		
 		menuItemGuardar.setOnAction(e->accionMenus(e));
@@ -44,7 +48,7 @@ public class CreacionMenu extends Application{
 		
 		menuArchivo.getItems().add(menuItemGuardar);*/
 		
-		menuArchivo.getItems().addAll(menuItemNuevo, menuItemGuardar);
+		menuArchivo.getItems().addAll(menuItemNuevo, menuItemGuardarComo, menuItemGuardar);
 		
 		MenuItem menuItemCortar=new MenuItem("Cortar");
 		
@@ -52,9 +56,19 @@ public class CreacionMenu extends Application{
 		
 		MenuItem menuItemCopiar=new MenuItem("Copiar");
 		
+		menuItemCopiar.setOnAction(e->accionMenus(e));
+		
+		menuItemPegar=new MenuItem("Pegar");
+		
+		menuItemPegar.setOnAction(e->accionMenus(e));
+		
+		menuItemPegar.setDisable(true);
+		
 		menuEdicion.getItems().add(menuItemCortar);
 		
 		menuEdicion.getItems().add(menuItemCopiar);
+		
+		menuEdicion.getItems().add(menuItemPegar);
 		
 		//----------Pane y Scene-----------------
 		
@@ -82,8 +96,15 @@ public class CreacionMenu extends Application{
 		MenuItem item=(MenuItem)e.getSource();
 		
 		System.out.println("Has pulsado en el menú de: " + item.getText());
+	
+		//if(item.getText().equals("Guardar como")) item.setText("Guardar");
+	
+		if(item.getText().equals("Guardar como")) menuItemGuardar.setDisable(true);
+	
+		if(item.getText().equals("Cortar")) menuItemPegar.setDisable(false);
+		
 	}
 	
 	MenuItem menuItemNuevo;
-	MenuItem menuItemGuardar;
+	MenuItem menuItemGuardarComo, menuItemGuardar, menuItemPegar;
 }
