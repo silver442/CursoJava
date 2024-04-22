@@ -1,6 +1,7 @@
 package menu;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
@@ -17,13 +18,45 @@ public class CreacionMenu extends Application{
 		
 		menuBar.getMenus().add(menuArchivo);
 		
-		MenuItem menuItemNuevo=new MenuItem("Nuevo");
+		Menu menuEdicion=new Menu("Edición");
 		
-		MenuItem menuItemGuardar=new MenuItem("Guardar");
+		menuBar.getMenus().add(menuEdicion);
 		
-		menuArchivo.getItems().add(menuItemNuevo);
+		Menu menuVer=new Menu("Ver");
 		
-		menuArchivo.getItems().add(menuItemGuardar);
+		menuBar.getMenus().add(menuVer);
+		
+		Menu MenuInsertar=new Menu("Insertar");
+		
+		menuBar.getMenus().add(MenuInsertar);
+		
+		//-----------Menu Items---------------
+		
+		menuItemNuevo=new MenuItem("Nuevo");
+		
+		menuItemNuevo.setOnAction(e->accionMenus(e));
+		
+		menuItemGuardar=new MenuItem("Guardar");
+		
+		menuItemGuardar.setOnAction(e->accionMenus(e));
+		
+		/*menuArchivo.getItems().add(menuItemNuevo);
+		
+		menuArchivo.getItems().add(menuItemGuardar);*/
+		
+		menuArchivo.getItems().addAll(menuItemNuevo, menuItemGuardar);
+		
+		MenuItem menuItemCortar=new MenuItem("Cortar");
+		
+		menuItemCortar.setOnAction(e->accionMenus(e));
+		
+		MenuItem menuItemCopiar=new MenuItem("Copiar");
+		
+		menuEdicion.getItems().add(menuItemCortar);
+		
+		menuEdicion.getItems().add(menuItemCopiar);
+		
+		//----------Pane y Scene-----------------
 		
 		BorderPane miPane=new BorderPane(null, menuBar, null, null, null);
 		
@@ -32,8 +65,7 @@ public class CreacionMenu extends Application{
 		primaryStage.setScene(miScene);
 		
 		primaryStage.show();
-		
-		
+			
 		
 	}
 	
@@ -41,4 +73,17 @@ public class CreacionMenu extends Application{
 		launch(args);
 	}
 
+	public void accionMenus(ActionEvent e) {
+		
+		/*if(e.getSource()==menuItemNuevo) System.out.println("Has pulsado el boton de Nuevo");
+		
+		else if(e.getSource()==menuItemGuardar) System.out.println("Has pulsado el boton de Guardar");*/
+		
+		MenuItem item=(MenuItem)e.getSource();
+		
+		System.out.println("Has pulsado en el menú de: " + item.getText());
+	}
+	
+	MenuItem menuItemNuevo;
+	MenuItem menuItemGuardar;
 }
