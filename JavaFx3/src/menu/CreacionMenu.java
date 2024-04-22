@@ -34,6 +34,8 @@ public class CreacionMenu extends Application{
 		
 		menuBar.getMenus().add(menuOpciones);
 		
+		Menu menuMasOpciones=new Menu("Mas opciones");
+		
 		//-----------Menu Items---------------
 		
 		menuItemNuevo=new MenuItem("Nuevo");
@@ -96,13 +98,40 @@ public class CreacionMenu extends Application{
 		menuItemOp4.setOnAction(e->accionMenus(e));
 		
 		
-		menuOpciones.getItems().addAll(menuItemOp1, menuItemOp2, menuItemOp3, menuItemOp4);
+		menuOpciones.getItems().addAll(menuItemOp1, menuItemOp2, menuItemOp3, menuItemOp4, menuMasOpciones);
 		
 		menuEdicion.getItems().add(menuItemCortar);
 		
 		menuEdicion.getItems().add(menuItemCopiar);
 		
 		menuEdicion.getItems().add(menuItemPegar);
+		
+		//----- Creación de subMénu ---------------
+		
+		RadioMenuItem menuOpcA=new RadioMenuItem("Opción A");
+		
+		RadioMenuItem menuOpcB=new RadioMenuItem("Opción B");
+		
+		RadioMenuItem menuOpcC=new RadioMenuItem("Opción C");
+		
+		menuMasOpciones.getItems().add(menuOpcA);
+		
+		menuMasOpciones.getItems().add(menuOpcB);
+		
+		menuMasOpciones.getItems().add(menuOpcC);
+		
+		//----------------- Menú personalizado----------------
+		
+		TextField cuadroNombre=new TextField();
+		
+		cuadroNombre.setPromptText("Nombre de Usuario");
+		
+		CustomMenuItem menuItemNombre=new CustomMenuItem(cuadroNombre);
+		
+		// para que no se oculte cuando hagamos click
+		menuItemNombre.setHideOnClick(false);
+		
+		menuMasOpciones.getItems().add(menuItemNombre);
 		
 		//----------Pane y Scene-----------------
 		
