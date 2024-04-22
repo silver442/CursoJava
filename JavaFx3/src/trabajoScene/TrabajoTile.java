@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.TilePane;
 import javafx.scene.paint.Color;
@@ -37,8 +38,15 @@ public class TrabajoTile extends Application{
 			miPane.getChildren().add(miStack);
 		}
 		
+		ScrollPane miScroll=new ScrollPane(miPane);
 		
-		Scene laScene=new Scene(miPane, 800,600);
+		miScroll.setMaxWidth(450);
+		
+		miScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
+		
+		StackPane miStack=new StackPane(miScroll);
+		
+		Scene laScene=new Scene(miStack, 800,600);
 		
 		primaryStage.setScene(laScene);
 		
