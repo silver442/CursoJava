@@ -13,8 +13,6 @@ import javafx.stage.Stage;
 public class PedidosPizza extends Application{
 
 	public void start(Stage primaryStage) {
-		
-		miStage=primaryStage;
 	
 		//------------Creación del panel superior-----------
 		
@@ -163,6 +161,36 @@ public class PedidosPizza extends Application{
 		
 		//----Creación del panel Inferior------------------
 		
+			//----Creación del panel de estilos----
+		
+			ToggleGroup grupoEstilos=new ToggleGroup();
+			
+			RadioButton radioModena=new RadioButton("Theme Modena");
+		
+			radioModena.setToggleGroup(grupoEstilos);
+			
+			radioModena.setSelected(true); // aparecer seleccionado por defecto
+			
+			radioModena.setOnAction(e->{
+				
+				setUserAgentStylesheet(STYLESHEET_MODENA);
+				
+			});
+
+			RadioButton radioCaspian=new RadioButton("Theme Caspian");
+			
+			radioCaspian.setToggleGroup(grupoEstilos);
+			
+			radioCaspian.setOnAction(e->{
+				
+				setUserAgentStylesheet(STYLESHEET_CASPIAN);
+				
+			});
+			
+			HBox paneEstilos=new HBox(10, radioModena, radioCaspian);
+			
+			//---------------------------------------------------------
+			
 		Button btnOk=new Button("OK");
 		
 		btnOk.setPrefWidth(80);
@@ -177,7 +205,7 @@ public class PedidosPizza extends Application{
 		
 		Region espacio=new Region();
 		
-		HBox paneInferior=new HBox(10, espacio, btnOk, btnCancel);
+		HBox paneInferior=new HBox(10, paneEstilos, espacio, btnOk, btnCancel);
 		
 		paneInferior.setHgrow(espacio, Priority.ALWAYS);
 		
