@@ -20,6 +20,8 @@ public class PedidosPizza extends Application{
 		
 		txtCabecera.setFont(new Font(20));
 		
+		txtCabecera.setId("titulo");
+		
 		HBox paneSuperior=new HBox(txtCabecera);
 		
 		paneSuperior.setPadding(new Insets(20,10,20,10));
@@ -31,6 +33,8 @@ public class PedidosPizza extends Application{
 		Label lblNombre=new Label("Nombre: ");
 		
 		lblNombre.setPrefWidth(100);
+		
+		lblNombre.getStyleClass().add("mi_estilo_propio");
 		
 		cuadroNombre=new TextField();
 		
@@ -202,6 +206,8 @@ public class PedidosPizza extends Application{
 		Button btnCancel=new Button("Cancelar");
 		
 		btnCancel.setPrefWidth(80);
+		
+		btnCancel.getStyleClass().add("mi_estilo_propio");
 		
 		btnCancel.setOnAction(e->btnCancel_Click());
 		

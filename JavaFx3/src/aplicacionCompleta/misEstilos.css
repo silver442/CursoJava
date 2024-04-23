@@ -6,3 +6,38 @@
 	-fx-font-size:12pt;
 	font-size:12pt;
 }
+
+Button{
+	
+	-fx-background-color:yellow;
+	
+}
+
+CheckBox{
+	
+	-fx-background-color:yellow;
+	
+}
+
+TextField{
+	
+	-fx-background-color:green;
+	
+}
+
+.mi_estilo_propio{
+	
+	-fx-background-color:blue;
+	-fx-font-size:16pt;
+	-fx-underline: true;
+	-fx-text-fill: white;
+
+}
+
+#titulo{
+	
+	-fx-text-fill: white;
+	-fx-font-size: 30pt;
+	
+}
+
