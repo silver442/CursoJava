@@ -193,6 +193,8 @@ public class PedidosPizza extends Application{
 			
 		Button btnOk=new Button("OK");
 		
+		btnOk.setStyle("-fx-font-size:16pt");
+		
 		btnOk.setPrefWidth(80);
 		
 		btnOk.setOnAction(e->btnOk_Click());
@@ -224,7 +226,10 @@ public class PedidosPizza extends Application{
 		//----Creación del Scene---
 		
 		Scene miScene=new Scene(panePrincipal);
-	
+		
+		// Agregar la hoja de estilo
+		miScene.getStylesheets().add(getClass().getResource("misEstilos.css").toExternalForm());
+		
 		primaryStage.setScene(miScene);
 		
 		primaryStage.setTitle("Pedidos Pizza");
