@@ -4,6 +4,7 @@ module JavaFx3 {
 	exports controles;
 	exports trabajoScene;
 	exports menu;
+	exports shapes;
 	requires javafx.controls;
 	requires javafx.graphics;
 	requires javafx.base;
