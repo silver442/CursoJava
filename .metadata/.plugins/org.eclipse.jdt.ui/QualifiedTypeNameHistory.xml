@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
-    <fullyQualifiedTypeName name="java.net.InetAddress"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
-    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
-    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
-    <fullyQualifiedTypeName name="modelo.Productos"/>
-    <fullyQualifiedTypeName name="controlador.ControladorCargaMenus"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
-    <fullyQualifiedTypeName name="vista.MarcoMVC"/>
-    <fullyQualifiedTypeName name="controlador.ControladorBotonEjecutar"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -28,7 +17,6 @@
     <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="emergente.VentanaDialogo"/>
     <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
-    <fullyQualifiedTypeName name="javafx.scene.text.Text"/>
     <fullyQualifiedTypeName name="javafx.geometry.Orientation"/>
     <fullyQualifiedTypeName name="javafx.stage.Stage"/>
     <fullyQualifiedTypeName name="javafx.scene.control.ChoiceBox"/>
@@ -48,8 +36,6 @@
     <fullyQualifiedTypeName name="javafx.scene.layout.BorderPane"/>
     <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
     <fullyQualifiedTypeName name="javafx.geometry.Pos"/>
-    <fullyQualifiedTypeName name="javafx.scene.shape.Rectangle"/>
-    <fullyQualifiedTypeName name="javafx.scene.paint.Color"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.TilePane"/>
     <fullyQualifiedTypeName name="javafx.geometry.Insets"/>
     <fullyQualifiedTypeName name="javafx.scene.control.Label"/>
@@ -57,7 +43,21 @@
     <fullyQualifiedTypeName name="javafx.scene.control.ScrollPane"/>
     <fullyQualifiedTypeName name="javafx.scene.control.ScrollPane.ScrollBarPolicy"/>
     <fullyQualifiedTypeName name="javafx.geometry.HPos"/>
-    <fullyQualifiedTypeName name="javafx.scene.Scene"/>
     <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
     <fullyQualifiedTypeName name="javafx.scene.layout.AnchorPane"/>
+    <fullyQualifiedTypeName name="javafx.scene.layout.FlowPane"/>
+    <fullyQualifiedTypeName name="javafx.scene.shape.Circle"/>
+    <fullyQualifiedTypeName name="javafx.scene.shape.Ellipse"/>
+    <fullyQualifiedTypeName name="javafx.scene.shape.Arc"/>
+    <fullyQualifiedTypeName name="javafx.scene.shape.ArcType"/>
+    <fullyQualifiedTypeName name="javafx.scene.shape.Line"/>
+    <fullyQualifiedTypeName name="javafx.scene.text.Text"/>
+    <fullyQualifiedTypeName name="javafx.scene.Group"/>
+    <fullyQualifiedTypeName name="javafx.scene.paint.LinearGradient"/>
+    <fullyQualifiedTypeName name="javafx.scene.paint.CycleMethod"/>
+    <fullyQualifiedTypeName name="javafx.scene.paint.Stop"/>
+    <fullyQualifiedTypeName name="javafx.scene.shape.Rectangle"/>
+    <fullyQualifiedTypeName name="javafx.scene.paint.Color"/>
+    <fullyQualifiedTypeName name="javafx.scene.effect.DropShadow"/>
+    <fullyQualifiedTypeName name="javafx.scene.Scene"/>
 </qualifiedTypeNameHistroy>
