@@ -7,6 +7,7 @@ module JavaFx3 {
 	exports shapes;
 	exports dinamico;
 	exports audios;
+	exports video;
 	
 	requires javafx.controls;
 	requires javafx.graphics;
