@@ -8,6 +8,7 @@ module JavaFx3 {
 	exports dinamico;
 	exports audios;
 	exports video;
+	exports animaciones;
 	
 	requires javafx.controls;
 	requires javafx.graphics;
