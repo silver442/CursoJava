@@ -68,7 +68,6 @@ public class TrabajoConAnimaciones extends Application{
 		
 		SequentialTransition tp= new SequentialTransition(t,t2);
 		
-		
 		tp.play();
 		
 		primaryStage.show();
