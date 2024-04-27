@@ -19,9 +19,17 @@ public class TrabajoConAnimaciones extends Application{
 		
 		miPelota.setFill(c);
 		
+		Circle miPelota2=new Circle(0,0,20);
+		
+		Color c2=Color.RED;
+		
+		miPelota2.setFill(c2);
+		
 		Group miGrupo=new Group();
 		
 		miGrupo.getChildren().add(miPelota);
+		
+		miGrupo.getChildren().add(miPelota2);
 		
 		Scene miscene=new Scene(miGrupo, 600,600);
 		
@@ -37,11 +45,31 @@ public class TrabajoConAnimaciones extends Application{
 		
 		t.setToY(miscene.getHeight()/2);
 		
-		t.setCycleCount(Transition.INDEFINITE);
+		t.setCycleCount(3);
 		
 		t.setAutoReverse(true);
 		
-		t.play();
+		//--------Animación pelota 2------------
+		TranslateTransition t2=new TranslateTransition(Duration.millis(1500),miPelota2);
+		
+		t2.setToX(miPelota2.getRadius());
+		
+		t2.setFromX(miscene.getWidth()-miPelota2.getRadius());
+		
+		t2.setFromY(miscene.getHeight()/3);
+		
+		t2.setToY(miscene.getHeight()/3);
+		
+		t2.setCycleCount(3);
+		
+		t2.setAutoReverse(true);
+		
+		//ParallelTransition tp= new ParallelTransition(t,t2);
+		
+		SequentialTransition tp= new SequentialTransition(t,t2);
+		
+		
+		tp.play();
 		
 		primaryStage.show();
 	}
