@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="ShowViewDialog">
-		<item key="DIALOG_X_ORIGIN" value="697"/>
+		<item key="DIALOG_X_ORIGIN" value="620"/>
 		<item key="DIALOG_Y_ORIGIN" value="230"/>
 		<item key="DIALOG_WIDTH" value="392"/>
 		<item key="DIALOG_HEIGHT" value="479"/>

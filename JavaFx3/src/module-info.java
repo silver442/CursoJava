@@ -9,6 +9,7 @@ module JavaFx3 {
 	exports audios;
 	exports video;
 	exports animaciones;
+	exports tactil;
 	
 	requires javafx.controls;
 	requires javafx.graphics;
