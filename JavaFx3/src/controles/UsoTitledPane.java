@@ -49,16 +49,42 @@ public class UsoTitledPane extends Application{
 		
 		miBox2.getChildren().addAll(fina,normal,gruesa);
 		
-		//--------AGREGANDO LOS MENÚS TITLEPANE------------
+		//----------TERCER ELEMENTO DE MENÚ--------------
 		
+		RadioButton aceitunas=new RadioButton("Aceitunas");
+		
+		RadioButton pimiento=new RadioButton("Pimiento");
+		
+		RadioButton cebolla=new RadioButton("Cebolla");
+		
+		ToggleGroup grupoIngredientes=new ToggleGroup();
+		
+		grupoIngredientes.getToggles().addAll(aceitunas,pimiento,cebolla);
+		
+		cebolla.setSelected(true);
+		
+		VBox miBox3=new VBox(10);
+		
+		miBox3.setPadding(new Insets(10));
+		
+		miBox3.getChildren().addAll(aceitunas,pimiento,cebolla);
+		
+		//--------AGREGANDO LOS MENÚS TITLEPANE------------
 		
 		TitledPane tPane=new TitledPane("Tamaño",miBox);
 		
 		TitledPane tPane2=new TitledPane("Masa",miBox2);
 		
-		tPane2.setCollapsible(false);
+		TitledPane tPane3=new TitledPane("Ingredientes",miBox3);
 		
-		HBox menus=new HBox(50, tPane, tPane2);
+		// para que no se pueda plegar
+		//tPane2.setCollapsible(false);
+		
+		Accordion acordeon=new Accordion();
+		
+		acordeon.getPanes().addAll(tPane, tPane2, tPane3);
+		
+		HBox menus=new HBox(50, acordeon);
 		
 		menus.setPadding(new Insets(30));
 		
