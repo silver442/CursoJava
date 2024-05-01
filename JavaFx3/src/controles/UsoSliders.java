@@ -7,7 +7,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Slider;
 import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.text.*;
 import javafx.stage.Stage;
 
@@ -15,11 +15,21 @@ public class UsoSliders extends Application {
 
 	public void start(Stage primaryStage) {
 		
-		VBox sliderBox=fabricaSliders();
+		VBox sliderBox=fabricaSliders(35);
+		VBox sliderBox2=fabricaSliders(7);
+		VBox sliderBox3=fabricaSliders(50);
+		VBox sliderBox4=fabricaSliders(20);
+		VBox sliderBox5=fabricaSliders(75);
+		
+		HBox miHBox=new HBox(25);
+		
+		miHBox.getChildren().addAll(sliderBox,sliderBox2,sliderBox3,sliderBox4,sliderBox5);
+		
+		miHBox.setAlignment(Pos.CENTER);
 		
 		StackPane root=new StackPane();
 		
-		root.getChildren().add(sliderBox);
+		root.getChildren().add(miHBox);
 		
 		Scene miScene=new Scene(root, 350, 200);
 		
@@ -30,7 +40,7 @@ public class UsoSliders extends Application {
 		primaryStage.show();
 	}
 	
-	private VBox fabricaSliders() {
+	private VBox fabricaSliders(int valorInicial) {
 		
 		Text miTexto=new Text();
 
@@ -52,7 +62,7 @@ public class UsoSliders extends Application {
 		
 		miSlider.setShowTickLabels(true);
 		
-		miSlider.setValue(20);
+		miSlider.setValue(valorInicial);
 		
 		miSlider.valueProperty().addListener((observable, valorAnterior, nuevoValor)->{
 			
