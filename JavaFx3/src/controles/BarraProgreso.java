@@ -20,7 +20,6 @@ public class BarraProgreso extends Application{
 		
 		ProgressBar reloj_indicador=new ProgressBar();
 		
-		
 		// Crea Label para mostrar el porcentaje
 		
 		Label porcentajeLabel=new Label();
