@@ -36,7 +36,6 @@ public class UsoScrollbar extends Application{
 		
 		
 		// Crear contenedor y agregar elementos
-		
 		AnchorPane miAnchor=new AnchorPane();
 		
 		AnchorPane.setTopAnchor(miTextArea, 10.0);
